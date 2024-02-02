@@ -1,0 +1,3 @@
+<%- include('navBar') %>
+the path that is passed on the anchor tag will always be the path which is under the
+get method

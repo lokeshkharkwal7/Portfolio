@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+</head>
+
+<style>
+
+.picturecontainer{
+
+display: flexbox;
+
+}
+    
+
+    #imageId {
+  
+      
+    }
+    #imageId2 {
+        position: absolute; 
+        margin-top: 5%; 
+
+        width: 150px;
+       height: 150px; 
+    }
+    #imageId3 {
+        position: absolute;
+        left: 10%;
+        margin-top: 5%;
+        margin-top: 5%; 
+
+
+        width: 150px;
+        /* Adjust the value as needed */
+        height: 150px;
+    }
+    #imageId4 {
+        position: absolute;
+        left: 20%;
+        margin-top: 5%;
+        margin-top: 5%; 
+
+
+        width: 130px;
+        /* Adjust the value as needed */
+        height: 150px; }
+
+        .picturecontainer{
+          display: flex;
+          justify-content: space-around;
+
+
+        }
+
+
+ 
+    
+        @media only screen and (min-width: 1001px) {
+    /* Your styles for screens wider than 1000 pixels go here */
+    #imageId {
+        position: relative;
+        margin-top: -22%; 
+  
+
+         left: 50%     
+    }
+
+
+    #imageId2 {
+        /* position: absolute;
+        left: -2%;
+        margin-top: 5%; */
+
+        width: 150px;
+        /* Adjust the value as needed */
+        height: 150px;
+    }
+    #imageId3 {
+        /* padding: 1%;
+        position: absolute;
+        left: 10%;
+        margin-top: 5%; */
+       
+
+        width: 150px;
+        /* Adjust the value as needed */
+        height: 150px;
+    }
+    #imageId4 {
+        /* position: absolute;
+        left: 20%;
+        margin-top: 5%; */
+
+        width: 130px;
+        /* Adjust the value as needed */
+        height: 150px; }
+}
+
+    
+</style>
+
+<body>
+    <%- include('navBarHeader') %> <br> <br>
+
+       
+
+        <start class="display-3">Lokesh Kharkwal</start><br>
+        <p class="display-1 text-primary">Web Developer</p><br><br>
+        <start class="display-6 fs-2">React , Node , Express and MongoDB </start><br>
+ 
+        <img src="webdev1.jpg" class="img-fluid"  alt="A Coding Guy" , id='imageId'>
+
+    <div class="picturecontainer">
+        <!-- <img src="aboutbgremove.jpg" class="img-fluid" alt="A Coding Guy" , id='imageId2'>  -->
+       
+        <!-- <img src="about3bgremove.jpg" class="img-fluid" alt="A Coding Guy" , id='imageId4'> -->
+        <!-- <img src="about2bgremove.jpg" class="img-fluid" alt="A Coding Guy" , id='imageId3'> -->
+    </div>
+   
+
+
+</body>
+<%- include('footer') %>  <br><br>
+
+
+</html>

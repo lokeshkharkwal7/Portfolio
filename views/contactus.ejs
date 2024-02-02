@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <%- include('navBarHeader') %> <br> 
+
+  </head>
+
+<style>
+  .container{
+    padding: 1px;
+     
+  }
+</style>
+<body>
+
+  <br>
+    <div class = 'container'>
+      <form method="post", action="/submit-form">
+    <start class="display-6 text-primary ">We Will Reach Back to You</start><br><br><br>
+
+
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label"> Name</label>
+        </div>
+
+        <div class="col-auto">
+          <input type="text" name="name" id="name_" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+
+        <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text"> Your Name? </span>
+        </div>
+      </div> <br>  
+
+
+
+    
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label"> Email</label>
+        </div>
+
+        <div class="col-auto">
+          <input type="text" name="email" id="email_" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+
+        <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text"> Your Email? </span>
+        </div>
+      </div> <br>  
+
+
+
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label"> Phone No</label>
+        </div>
+
+        <div class="col-auto">
+          <input type="text" name="phone" id="phoneno_" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+
+        <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text"> Your Contact No? </span>
+        </div>
+      </div> 
+
+
+      <div class="mb-3">
+        <label for="validationTextarea" class="form-label"> </label> 
+        <textarea class="form-control " id="validationTextarea" name="message" placeholder=" Provide me with detailed message" required></textarea>
+  
+      </div>
+ 
+      
+      <div class="col-auto">
+      <select class="form-select" name="type" id="message_" required>
+        <option selected disabled value="">Who are You?</option>
+        <option>Recruiter</option>
+        <option>Client</option>
+        <option>Visitor</option> </div>
+
+      </select><br>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>   
+   
+    
+</body>
+<%- include('footer') %>  <br><br>
+</html>
+
+
+
