@@ -14,17 +14,9 @@
 
 <style>
 
-.picturecontainer{
 
-display: flexbox;
-
-}
     
-
-    #imageId {
-  
-      
-    }
+ 
     #imageId2 {
         position: absolute; 
         margin-top: 5%; 
@@ -40,8 +32,7 @@ display: flexbox;
 
 
         width: 150px;
-        /* Adjust the value as needed */
-        height: 150px;
+         height: 150px;
     }
     #imageId4 {
         position: absolute;
@@ -51,8 +42,7 @@ display: flexbox;
 
 
         width: 130px;
-        /* Adjust the value as needed */
-        height: 150px; }
+         height: 150px; }
 
         .picturecontainer{
           display: flex;
@@ -65,8 +55,7 @@ display: flexbox;
  
     
         @media only screen and (min-width: 1001px) {
-    /* Your styles for screens wider than 1000 pixels go here */
-    #imageId {
+     #imageId {
         position: relative;
         margin-top: -22%; 
   
@@ -76,32 +65,20 @@ display: flexbox;
 
 
     #imageId2 {
-        /* position: absolute;
-        left: -2%;
-        margin-top: 5%; */
-
-        width: 150px;
-        /* Adjust the value as needed */
-        height: 150px;
-    }
-    #imageId3 {
-        /* padding: 1%;
-        position: absolute;
-        left: 10%;
-        margin-top: 5%; */
        
 
         width: 150px;
-        /* Adjust the value as needed */
-        height: 150px;
+         height: 150px;
+    }
+    #imageId3 {
+        
+       
+
+        width: 150px;
+         height: 150px;
     }
     #imageId4 {
-        /* position: absolute;
-        left: 20%;
-        margin-top: 5%; */
-
-        width: 130px;
-        /* Adjust the value as needed */
+        
         height: 150px; }
 }
 
@@ -110,7 +87,9 @@ display: flexbox;
 
 <body>
     <%- include('navBarHeader') %> <br> <br>
-
+   
+      
+    <div class="container">
        
 
         <start class="display-3">Lokesh Kharkwal</start><br>
@@ -120,11 +99,8 @@ display: flexbox;
         <img src="webdev1.jpg" class="img-fluid"  alt="A Coding Guy" , id='imageId'>
 
     <div class="picturecontainer">
-        <!-- <img src="aboutbgremove.jpg" class="img-fluid" alt="A Coding Guy" , id='imageId2'>  -->
-       
-        <!-- <img src="about3bgremove.jpg" class="img-fluid" alt="A Coding Guy" , id='imageId4'> -->
-        <!-- <img src="about2bgremove.jpg" class="img-fluid" alt="A Coding Guy" , id='imageId3'> -->
     </div>
+</div>
    
 
 
