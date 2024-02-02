@@ -3,7 +3,7 @@ const express = require('express');
 const { url } = require('inspector');
 const path = require('path')
 const app = express()
-const port = process.env.PORT || 5050
+const port = process.env.PORT || 5555
 const bodyParser = require('body-parser')
 
 app.set('view engine', 'ejs')
@@ -11,6 +11,8 @@ app.use(express.static('public'));
 
 // For getting details of the forms 
 app.use(express.urlencoded()) 
+// app.use(bodyParser.urlencoded({ extended: true }));
+
 
 // making an connection with mongo db database 
 const aboutusform = require('./config');
