@@ -3,6 +3,7 @@ const express = require('express');
 const { url } = require('inspector');
 const path = require('path')
 const app = express()
+const port = process.env.PORT || 5050
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
@@ -62,4 +63,6 @@ app.post('/submit-form', async(req, resp)=>{
     console.log(testdata)
 })
 
-app.listen(5050)
+app.listen(port,()=>{
+    console.log('Server Running on the port : ', port)
+})
