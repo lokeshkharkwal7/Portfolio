@@ -1,5 +1,5 @@
 // document.addEventListener('DOMContentLoaded', function() { 
-    const navBarLinks = document.querySelectorAll('.nav-link');
+    const navBarLinks = document.querySelectorAll('.nav-item');
     for(let link of navBarLinks){
       if (link.getAttribute('href') === document.URL.slice(41)){
         // link.classList.remove('nav-link')
